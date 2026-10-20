@@ -1,73 +1,137 @@
-# AI/ML: 4-Day Build Sprint 🚀
+# 🚀 AI/ML: 4-Day Build Sprint
 
-A hands-on Machine Learning learning series focused on building small projects, understanding algorithms, and visualizing how models learn.
+A hands-on Machine Learning project series focused on understanding algorithms through implementation, experimentation, and visualization.
 
-This repository documents my journey from fundamental Machine Learning algorithms to neural networks and modern deep learning.
+The goal is to strengthen my foundations in AI/ML by building small, practical projects — progressing from regression and optimization to ensemble learning and model evaluation.
 
-## 📅 Day 1 — Machine Learning Fundamentals
+## 📚 Project Roadmap
 
-### Project 1: Exam Score Predictor
-**Algorithm:** Linear Regression
+| Day | Focus | Projects | Status |
+|---|---|---:|---|
+| Day 1 | ML Fundamentals | 3 | ✅ Completed |
+| Day 2 | Classical Machine Learning | 3 | ✅ Completed |
+| Day 3 | Neural Networks | 3 planned | 🔜 Upcoming |
+| Day 4 | Advanced Deep Learning | 3 planned | 🔜 Upcoming |
 
-Predicts exam scores from study hours using a simple regression model.
+---
 
-**Concepts:** Features, targets, train/test splitting, predictions, MAE, and R².
+## 📅 Day 1 — ML Fundamentals
 
-### Project 2: Gradient Descent Visualizer
-**Algorithm:** Gradient Descent implemented using NumPy
+**Focus:** Regression, optimization, and classification.
 
-Demonstrates how a model learns its slope and intercept by repeatedly reducing its prediction error.
+| Project | Algorithm | What It Covers |
+|---|---|---|
+| [01. Exam Score Predictor](day-1-ml-fundamentals/01_linear_regression_exam_score.ipynb) | Linear Regression | Prediction, features, targets, MAE, and R² |
+| [02. Gradient Descent Visualizer](day-1-ml-fundamentals/02_gradient_descent_visualizer.ipynb) | Gradient Descent | Gradients, cost functions, learning rates, and convergence |
+| [03. Student Pass/Fail Predictor](day-1-ml-fundamentals/03_logistic_regression_pass_fail.ipynb) | Logistic Regression | Classification, probabilities, evaluation metrics, and decision boundaries |
 
-**Concepts:** Cost functions, gradients, learning rates, parameter updates, and convergence.
+### Highlights
 
-The training MSE decreased from approximately 519.85 to 0.75 on the illustrative dataset.
+- Reduced training Mean Squared Error from approximately **519.85 to 0.75** in the Gradient Descent experiment.
+- Achieved **87.5% test accuracy** with Logistic Regression on 24 held-out observations from a synthetic dataset.
 
-### Project 3: Student Pass/Fail Predictor
-**Algorithm:** Logistic Regression
+📖 **[Explore Day 1 projects and details](day-1-ml-fundamentals/README.md)**
 
-Classifies synthetic student records using study hours and attendance.
+---
 
-**Concepts:** Classification, feature scaling, class probabilities, precision, recall, F1-score, confusion matrices, and decision boundaries.
+## 📅 Day 2 — Classical Machine Learning
 
-The model achieved 87.5% accuracy on a held-out test set of 24 synthetic observations.
+**Focus:** Hyperparameter optimization, ensemble learning, and classification evaluation.
+
+| Project | Techniques | What It Covers |
+|---|---|---|
+| [04. KNN Hyperparameter Lab](day-2-classical-ml/04_knn_hyperparameter_lab.ipynb) | KNN, GridSearchCV, PCA | Feature scaling, cross-validation, and hyperparameter selection |
+| [05. Ensemble Learning Benchmark](day-2-classical-ml/05_ensemble_learning_benchmark.ipynb) | Decision Tree, Random Forest, Gradient Boosting | Model comparison, confusion matrices, and feature importance |
+| [06. Classification Threshold Dashboard](day-2-classical-ml/06_classification_threshold_dashboard.ipynb) | Random Forest, ROC-AUC, precision–recall analysis | Threshold selection and precision–recall trade-offs |
+
+### Highlights
+
+- Achieved **100% test accuracy** on 36 held-out samples in the KNN experiment.
+- Compared three tree-based algorithms using five-fold stratified cross-validation.
+- Explored how changing a classification threshold affects precision, recall, and F1-score.
+
+📖 **[Explore Day 2 projects and results](day-2-classical-ml/README.md)**
+
+*All results reflect specific experimental setups and data splits; they are not guarantees of performance on unseen datasets.*
+
+---
 
 ## 🛠️ Tech Stack
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
-- VS Code
+- **Language:** Python
+- **Data Handling:** NumPy, Pandas
+- **Visualization:** Matplotlib
+- **Machine Learning:** Scikit-learn
+- **Environment:** Jupyter Notebook, VS Code
+- **Version Control:** Git and GitHub
 
 ## 📂 Repository Structure
 
-- `day-1-ml-fundamentals/` — Regression, optimization, and classification
-- `day-2-classical-ml/` — Classical Machine Learning experiments
-- `day-3-neural-networks/` — Clustering, dimensionality reduction, and neural networks
-- `day-4-advanced-deep-learning/` — CNNs, sequence models, and transformers
+```text
+ai-ml-4-day-build-sprint/
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── day-1-ml-fundamentals/
+│   ├── README.md
+│   └── 3 project notebooks and visualizations
+│
+├── day-2-classical-ml/
+│   ├── README.md
+│   └── 3 project notebooks and visualizations
+│
+├── day-3-neural-networks/
+│
+└── day-4-advanced-deep-learning/
+```
 
-The later phases are planned and will be added as they are completed.
+The Day 3 and Day 4 folders represent upcoming phases and will be populated as those projects are completed.
 
-## 🚀 Getting Started
+## ⚙️ Getting Started
 
-Clone the repository, create a virtual environment, and install the dependencies.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SammyK0307/ai-ml-4-day-build-sprint.git
+cd ai-ml-4-day-build-sprint
+```
+
+### 2. Create and activate a virtual environment
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
 python -m pip install -r requirements.txt
 ```
 
-Open a project notebook in VS Code and select the Python environment for your Jupyter kernel.
+### 4. Run the notebooks
 
-## 📌 Important Note
+Open the repository in VS Code, install the Python and Jupyter extensions if needed, and select the virtual environment as your notebook kernel.
 
-The initial projects use small synthetic datasets for educational purposes. Their results illustrate how the algorithms work and should not be interpreted as validated real-world predictions.
+Open any project notebook and run its cells sequentially.
 
-## 🎯 Goal
+## 🎯 Learning Goals
 
-Learn Machine Learning by building, experimenting, visualizing results, documenting limitations, and sharing each project.
+Through this sprint, I aim to:
 
-More projects will be added throughout the four-day sprint.
+- Strengthen my understanding of core ML algorithms.
+- Implement models and evaluate them using appropriate metrics.
+- Understand optimization, hyperparameter tuning, and generalization.
+- Visualize model behavior and communicate experimental findings.
+- Progress toward neural networks and modern deep learning.
+
+## 📌 Notes and Limitations
+
+The projects use small public or synthetic datasets for educational experimentation. Performance metrics are specific to the experiments conducted and should not be interpreted as guarantees of real-world performance.
+
+The breast cancer classification projects are educational demonstrations, not clinically validated diagnostic systems.
+
+---
+
+**Learning by building. Improving through experimentation. One project at a time. 🚀**
